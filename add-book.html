@@ -62,12 +62,12 @@
         <div class="container pt-5">
             <h1>Nuovo Libro</h1>
             <!-- Form-Add-Book -->
-            <form action="#" class="was-validated">
+            <form action="#" class="was-validated" novalidate>
                 <div class="row">
                     <div class="col-6 mt-3">
                         <label for="nomeautore" class="form-label">Nome autore</label>
                         <input type="text" class="form-control" id="nomeautore"
-                            placeholder="Inserisci il nome dell'autore" required>
+                            placeholder="Inserisci il nome dell'autore" minlength="2" required>
                         <div class="invalid-feedback">
                             Per favore inserisci il nome.
                         </div>
@@ -75,7 +75,7 @@
                     <div class="col-6 mt-3">
                         <label for="cognomeautore" class="form-label">Cognome autore</label>
                         <input type="text" class="form-control" id="cognomeautore"
-                            placeholder="Inserisci il cognome dell'autore" required>
+                            placeholder="Inserisci il cognome dell'autore" minlength="2" required>
                             <div class="invalid-feedback">
                             Per favore inserisci il cognome.
                         </div>
@@ -103,11 +103,17 @@
                     <div class="col-12 col-md-4 my-3">
                         <label for="year" class="form-label">Anno di pubblicazione:</label>
                         <input type="number" id="year" class="form-control" placeholder="Inserisci l'anno" required>
+                        <div class="invalid-feedback">
+                            Per favore inserisci l'anno.
+                        </div>
                     </div>
                     <div class="col-12 col-md-4 my-3">
                         <label for="isbn" class="form-label">ISBN&#35;</label>
                         <input type="text" class="form-control" id="isbn" placeholder="Inserisci il codice ISBN&#35;"
                             required>
+                            <div class="invalid-feedback">
+                            Per favore inserisci il codice ISBN.
+                        </div>
                     </div>
                     <hr>
                     <div class="col-12 my-3">Note
