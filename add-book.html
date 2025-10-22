@@ -62,22 +62,34 @@
         <div class="container pt-5">
             <h1>Nuovo Libro</h1>
             <!-- Form-Add-Book -->
-            <form action="#">
+            <form action="#" class="was-validated">
                 <div class="row">
                     <div class="col-6 mt-3">
                         <label for="nomeautore" class="form-label">Nome autore</label>
                         <input type="text" class="form-control" id="nomeautore"
                             placeholder="Inserisci il nome dell'autore" required>
+                        <div class="invalid-feedback">
+                            Per favore inserisci il nome.
+                        </div>
                     </div>
                     <div class="col-6 mt-3">
                         <label for="cognomeautore" class="form-label">Cognome autore</label>
                         <input type="text" class="form-control" id="cognomeautore"
                             placeholder="Inserisci il cognome dell'autore" required>
+                            <div class="invalid-feedback">
+                            Per favore inserisci il cognome.
+                        </div>
                     </div>
                     <div class="col-12 my-3">
                         <label for="titlebook" class="form-label">Titolo</label>
                         <input type="text" class="form-control" id="titlebook"
                             placeholder="Inserisci il titolo del libro" required>
+                        <div class="text-secondary">
+                            Titolo versione italiana
+                        </div>
+                        <div class="invalid-feedback">
+                            Per favore inserisci il titolo.
+                        </div>
                     </div>
                     <div class="col-12 col-md-4 my-3">
                         <label for="gender" class="form-label">Genere</label>
@@ -110,12 +122,17 @@
                     </div>
 
                 </div>
+                <button type="submit" class="btn btn-primary mt-3">Aggiungi libro</button>
             </form>
-            <button class="btn btn-primary mt-3">Aggiungi libro</button>
+
         </div>
 
     </main>
 
+    <!-- Bootstrap-JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
