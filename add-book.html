@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matteo Le Pera">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap-Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- My-Css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Aggiungi Libro</title>
+</head>
+<body>
+    <header class="fixed-top">
+        <!-- Nav-Bar -->
+        <nav class="navbar navbar-expand-lg bg-dark fs-5" data-bs-theme="dark">
+            <div class="container-fluid">
+                <!-- Right-Menu -->
+                <a class="navbar-brand" href="index.html">
+                    <img class="mlp-logo-h" src="./img/duck.png" alt="logo paperella"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anagrafica Utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storico Prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                    </ul>
+                    <!-- End-Right-Menu -->
+
+                    <!-- Left-Menu -->
+                    <form class="d-flex" role="search" data-bs-theme="light">
+                        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Cerca..." />
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
+                    <!-- End-Left-Menu -->
+                </div>
+            </div>
+        </nav>
+        <!-- End-Nav-Bar -->
+    </header>
+
+    <main class="pt-5">
+        <div class="container pt-5">
+            <h1>Nuovo Libro</h1>
+            <div class="row">
+                <div class="col-6 mt-3">Nome autore</div>
+                <div class="col-6 mt-3">Cognome autore</div>
+                <div class="col-12 my-3">Titolo</div>
+                <div class="col-12 col-md-4 my-3">Genere</div>
+                <div class="col-12 col-md-4 my-3">Anno di pubblicazione</div>
+                <div class="col-12 col-md-4 my-3">ISBN#</div>
+                <hr>
+                <div class="col-12 my-3">Note</div>
+                <div>Disponibile anche in digitale</div>
+                
+            </div>
+            <button class="btn btn-primary mt-3">Aggiungi libro</button>
+        </div>
+
+    </main>
+    
+</body>
+</html>
